@@ -1,0 +1,56 @@
+.musicUploadForm {
+    max-width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-weight: bolder;
+    background-color: rgb(147, 64, 254);
+  
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    input[type="file"] {
+      display: none;
+    }
+  
+    button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #005a9e;
+      }
+  
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  
+    .uploadProgress {
+      margin-top: 20px;
+      height: 20px;
+      background-color: #eee;
+      border-radius: 10px;
+      overflow: hidden;
+  
+      .progressBar {
+        height: 100%;
+        background-color: #00bc6c;
+        text-align: center;
+        line-height: 20px;
+        color: white;
+      }
+    }
+  }
+  
